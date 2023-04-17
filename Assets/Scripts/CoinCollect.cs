@@ -10,11 +10,10 @@ public class CoinCollect : MonoBehaviour
         {
             return;
         }
-
+        Destroy(gameObject);
         // Add to the player score
         GameManager.inst.IncrementScore();
         //destroy the coin
-        Destroy(gameObject);
     }
     // Start is called before the first frame update
     void Start()

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EdgesCollision : MonoBehaviour
 {
-
     PlayerMovements playerMovement;
     private void OnCollisionEnter (Collision collision)
     {

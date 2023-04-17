@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-    int score;
+    int score = 0;
     public static GameManager inst;
 
     [SerializeField] Text scoreText;
@@ -15,10 +15,8 @@ public class GameManager : MonoBehaviour
         score++;
         scoreText.text = "SCORE : "+score;
         //increase player speed
-        if(score%10 == 0)
-        {
-            playerMovements.speed += playerMovements.speedIncreaser; 
-        }
+        playerMovements.speed += playerMovements.speedIncreaser; 
+
     }
     private void Awake()
     {

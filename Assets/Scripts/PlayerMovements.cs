@@ -48,10 +48,10 @@ public class PlayerMovements : MonoBehaviour
         }
         
 
-        if(transform.position.y < -5)
+        /*if(transform.position.y < -5)
         {
             Die();
-        }
+        }**/
     }
 
     public void Die()
